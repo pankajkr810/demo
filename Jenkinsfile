@@ -2,7 +2,10 @@ pipeline {
     agent any
     
     stages {
-        // Your build stages here
+        stage {
+            steps {
+                echo "hello"
+        }
     }
     
     post {
