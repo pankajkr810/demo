@@ -2,11 +2,14 @@ pipeline {
     agent any
     
     stages {
-        stage {
+        stage('merge-jar-output')
+           {
             steps {
-                echo "hello"
+                sh '''
+                pwd
+                ls
             }
-        }
+           }
     }
     
     post {
