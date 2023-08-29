@@ -22,7 +22,7 @@ pipeline {
       emailext (
         subject: "Build Successful",
                       body: "The build was successful. Here's the attached file.",
-                      to: 'anshika.tiwari@robomq.io',
+                      to: 'pankaj.kumar@robomq.io',
                       attachmentsPattern: 'dir/**/*.txt'
         )
     }
